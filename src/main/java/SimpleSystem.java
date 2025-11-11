@@ -16,9 +16,9 @@ public class SimpleSystem {
         ChatModel cmodel = OpenAiChatModel.builder()
                 .apiKey(System.getenv("OPENAI_API_KEY"))
                 .modelName(OpenAiChatModelName.GPT_4_O)
-                //.temperature(0.3)                    // keep randomness low
+                .temperature(0.3)                    // keep randomness low
                 .timeout(Duration.ofSeconds(120))
-                //.maxTokens(256)                     // keep costs down during development
+                .maxTokens(512)                     // keep costs down during development
                 .build();
         System.out.println("Hello World SimpleSystem ---------------------");
         List<ChatMessage> messages = new ArrayList<>();
