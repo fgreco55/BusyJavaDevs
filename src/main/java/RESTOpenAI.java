@@ -10,7 +10,7 @@ public class RESTOpenAI {
         var apiKey = System.getenv("OPENAI_API_KEY");
         var body = """
         {
-            "model": "gpt-4",
+            "model": "gpt-5",
             "messages": [
                 {
                     "role": "user",
